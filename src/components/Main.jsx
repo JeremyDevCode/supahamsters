@@ -24,9 +24,9 @@ function Main({
   const { stateUpdaters } = useHamsters();
   const { setHamster } = stateUpdaters;
   return (
-    <section className="flex z-10 relative items-end justify-between h-full mb-40">
-      <div>
-        <h2 className="text-6xl text-green-400 font-bold mb-8">
+    <section className="flex 2xl:flex-row flex-col w-full z-10 relative 2xl:items-end items-center justify-between h-full mb-40">
+      <div className="">
+        <h2 className="2xl:text-6xl text-3xl text-green-400 font-bold mb-8">
           Create a new hamster
         </h2>
         <form
@@ -72,7 +72,7 @@ function Main({
           </button>
         </form>
       </div>
-      <img className="scale-125" src={Hamster} />
+      <img className="2xl:scale-125 scale-100" src={Hamster} />
     </section>
   );
 }

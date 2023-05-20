@@ -6,12 +6,14 @@ import { PencilIcon } from "../assets/icons/PencilIcon";
 function Collection({ hamsters, createEdit, killHamsters }) {
   return (
     <section className="flex flex-col w-full gap-10 text-[#242426] font-medium">
-      <h2 className="text-7xl text-[#e39c62] font-semibold">My Hamsters</h2>
-      <div className="grid grid-cols-3 gap-8">
+      <h2 className="md:text-7xl sm:text-5xl text-4xl text-[#e39c62] font-semibold">
+        My Hamsters
+      </h2>
+      <div className="grid xl:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-8">
         {hamsters.map((hamster, index) => (
           <article
             key={index}
-            className="flex flex-col items-center text-2xl gap-y-2 relative group/hamster"
+            className="flex flex-col w-fit h-fit items-center text-2xl gap-y-2 relative group/hamster"
           >
             <div className="w-full h-full absolute top-0 hidden group-hover/hamster:block bg-[#00000050] text-[#E3E6E8]">
               <Button
