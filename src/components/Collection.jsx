@@ -6,7 +6,7 @@ import { PencilIcon } from "../assets/icons/PencilIcon";
 function Collection({ hamsters, createEdit, killHamsters }) {
   return (
     <section className="flex flex-col w-full gap-10 text-[#242426] font-medium">
-      <h2 className="md:text-7xl sm:text-5xl text-4xl text-[#e39c62] font-semibold">
+      <h2 className="md:text-7xl sm:text-5xl text-4xl text-[#e39c62] font-bold">
         My Hamsters
       </h2>
       <div className="grid xl:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-8">

@@ -4,7 +4,7 @@ import { useHamsters } from "../hooks/useHamsters";
 
 const inputStyle = "w-full h-full text-[#E3E6E8] bg-transparent outline-none";
 const labelStyle =
-  "flex flex-col text-2xl rounded-md text-gray-400 bg-[#FFFFFF11] py-3 px-5 capitalize";
+  "flex flex-col text-xl rounded-md text-gray-400 bg-[#FFFFFF11] py-3 px-5 capitalize";
 
 const REQUIREMENTS = [
   { name: "name", type: "text" },
@@ -21,12 +21,10 @@ function Main({
   createHamsters,
   editHamsters,
 }) {
-  const { stateUpdaters } = useHamsters();
-  const { setHamster } = stateUpdaters;
   return (
-    <section className="flex 2xl:flex-row flex-col w-full z-10 relative 2xl:items-end items-center justify-between h-full mb-40">
-      <div className="">
-        <h2 className="2xl:text-6xl text-3xl text-green-400 font-bold mb-8">
+    <section className="flex lg:flex-row flex-col w-full z-10 relative lg:items-end items-center justify-between h-full lg:mb-40">
+      <div>
+        <h2 className="2xl:text-6xl md:text-5xl text-3xl text-green-400 font-bold mb-8">
           Create a new hamster
         </h2>
         <form
@@ -72,7 +70,7 @@ function Main({
           </button>
         </form>
       </div>
-      <img className="2xl:scale-125 scale-100" src={Hamster} />
+      <img className="2xl:scale-125 xl:scale-100 lg:scale-75" src={Hamster} />
     </section>
   );
 }
